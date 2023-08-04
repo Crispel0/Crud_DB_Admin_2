@@ -16,7 +16,7 @@ import lombok.ToString;
 @ToString
 @EqualsAndHashCode
 @Table(name = "cursos")
-@Entity(name = "cursos")
+@Entity(name="cursos")
 public class Cursos {
 	
 	@Getter @Setter
