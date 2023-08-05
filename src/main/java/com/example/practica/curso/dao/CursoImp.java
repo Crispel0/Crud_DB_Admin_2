@@ -53,7 +53,7 @@ public class CursoImp implements CursosDao {
 		Argon2 Argon2 = Argon2Factory.create(Argon2Factory.Argon2Types.ARGON2id);
 		
 		if(Argon2.verify(contrasenaRecuperada, cursos.getPassword())) { //verifica si el hash creado es igual contraseña retorna, retorna cursos
-			return lista.get(0);
+			return lista.get(0); //return of the list the user that make reference to this curso
 		}
 		else 
 			return null;

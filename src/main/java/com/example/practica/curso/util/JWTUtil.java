@@ -2,6 +2,7 @@ package com.example.practica.curso.util;
 
 import io.jsonwebtoken.Claims;
 
+
 import io.jsonwebtoken.JwtBuilder;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
@@ -17,14 +18,12 @@ import java.util.Date;
 
 
 @Component
-public class JwtUtil {
-
-
+public class JWTUtil {
 	
 	/**
 	 * @author Mahesh
 	 */
-	public class JWTUtil {
+
 	    @Value("${security.jwt.secret}")
 	    private String key;
 
@@ -100,4 +99,4 @@ public class JwtUtil {
 	        return claims.getId();
 	    }
 	}
-}
+

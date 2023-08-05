@@ -8,9 +8,10 @@ function cargarHeaders (){
 	return {
 		      'Accept': 'application/json',
 		      'Content-Type': 'application/json',
-		      'Authorization': localStorage.token,
+		      'Authorization': localStorage.tokenJwt
 	}
 }
+
 async function cargarCursos(){
 	
 	
@@ -45,9 +46,12 @@ async function cargarCursos(){
 		    headers: cargarHeaders()
   });
   
-  location.reload();
+ location.reload();
+}
+  
+  
 		
-  }
+  
   		
 
 	
