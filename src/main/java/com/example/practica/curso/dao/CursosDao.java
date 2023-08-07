@@ -12,12 +12,8 @@ import com.example.practica.curso.models.Cursos;
 public interface CursosDao {
 
 	List<Cursos> getCursos();
-	
-
 	void registrar(Cursos curso);
 	void eliminar(int id);
-	boolean verificar(Cursos cursos);
-	
-		
+	Cursos verificar(Cursos cursos);
 }
 
